@@ -1,0 +1,37 @@
+body {
+	background-image: url(../images/cssbackground.jpg);
+}
+
+h1 {
+	float: left;
+	padding:20px;
+	color: white;
+}
+
+.header{
+	color:white;
+}
+#mainbox{
+	background: green;
+	clear: left;
+	color: white;
+	width:500px;
+
+}
+
+#goal {
+	background:red;
+	color:white;
+
+}
+
+h3 { 
+
+	color:white;
+
+}
+
+h4 {
+	color:white;
+
+}
