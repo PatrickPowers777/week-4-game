@@ -7,7 +7,6 @@
   src="https://code.jquery.com/jquery-3.1.1.js"
   integrity="sha256-16cdPddA6VdVInumRGo6IbivbERE8p7CQR3HzTBuELA="
   crossorigin="anonymous"></script>
- <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
 </head>
 <body><div class="header">
@@ -32,61 +31,14 @@
   <br>
   <h4>Your total score is <strong id="total">0</strong></h4>
 
-<script type="text/javascript">
-  function getRandomIntInclusive(min, max) {
- min = Math.ceil(min);
- max = Math.floor(max);
- return Math.floor(Math.random() * (max - min + 1)) + min;
-}
+<script type="text/javascript" src="javascript/crystals.js">
+  
 
-var wins = 0;
-var losses = 0;
-var totalScore = 0;
-//this is calling the function to give you a random numnber
-var goal=getRandomIntInclusive(19,120);
-console.log(goal);
-$('#goal').html(goal);
 
-var crystal = [];
-for(var i = 0; i < 4; i++){
-  var number = getRandomIntInclusive(1,12);
-  crystal[i] = {
-    //set a property called score and set the value to the "number" variable
-    score: number
-  };
-  $('#crystal'+ i).attr("data-crystal", i);
-}
 
-$(".crystals").on("click", function(){
-  var dataIndex = parseInt($(this).attr("data-crystal"));
-  console.log(crystal[dataIndex].score);
-  totalScore = totalScore + crystal[dataIndex].score;
-  $("#total").html(totalScore);
-  if (totalScore === goal) {
-      wins++;
-            $("#win-counter").html(wins);
-            reset();
-  }
+  
 
-    else if (totalScore > goal) {
-    losses++;
-    $("#loss-counter").html(losses)
-      reset();
-
-  }
-});
-
-function reset(){
     
-    total=0;
-    $("#total").html(total);
-    $("#goal").html(goal)
-    for (var i=0; i<crystal.length; i++)
-    {
-        (crystal[i])
-    }
-
-}
 
 
 

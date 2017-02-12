@@ -22,6 +22,7 @@ h1 {
 #goal {
 	background:red;
 	color:white;
+	width: 500px;
 
 }
 
@@ -33,5 +34,6 @@ h3 {
 
 h4 {
 	color:white;
+	padding: 10px 10px 10px 10px;
 
 }
