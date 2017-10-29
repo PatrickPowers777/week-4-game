@@ -56,7 +56,7 @@ $(".crystals").on("click", function(){
   //is redefining what variable i was in the for loop and replacing it with the <img>
   //tag's data-crystal attribute. totalScore is being reset to match the value of
   //each crystal's random value which is defined in crystal[dataIndex].score
-  totalScore = totalScore + crystal[dataIndex].score;
+  totalScore += crystal[dataIndex].score;
   //Write the new total score to the #total div
   $("#total").html(totalScore);
   //Self-explanatory. If the totalScore variable matches the random number defined

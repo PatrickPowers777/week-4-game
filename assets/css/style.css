@@ -12,7 +12,7 @@ h1 {
 	color:white;
 }
 #mainbox{
-	background: green;
+	background: darkcyan;
 	clear: left;
 	color: white;
 	width:500px;
@@ -20,7 +20,7 @@ h1 {
 }
 
 #goal {
-	background:red;
+	background:blue;
 	color:white;
 	width: 500px;
 
